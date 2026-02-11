@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Mission6Assignment.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mission6Assignment.Controllers;
 
@@ -11,7 +11,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult GetToknowJoel()
     {
         return View();
     }
