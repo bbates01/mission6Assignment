@@ -7,13 +7,51 @@
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Mission6Assignment.styles.css" asp-append-version="true"/>
+    <!-- Modern font and tiny scoped CSS for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Minimal modern styles scoped to the app (keep Bootstrap for most work) */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f7f8fb;
+            color: #222;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+        }
+        .navbar-modern {
+            background-color: #ffffff;
+            border-bottom: 1px solid rgba(16,24,40,0.05);
+        }
+        .navbar-modern .navbar-brand { font-weight: 600; color: #0d6efd; }
+        .navbar-modern .nav-link { color: #334155; }
+        .modern-card {
+            background: #ffffff;
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+        }
+        .hero {
+            padding: 3.5rem 1rem;
+        }
+        .hero h1 { font-size: 2rem; font-weight:700; color:#0f172a; }
+        .lead-accent { color: #475569; }
+        .btn-accent {
+            background: linear-gradient(90deg,#2563eb 0%,#0ea5e9 100%);
+            border: none;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(37,99,235,0.12);
+            font-weight:600;
+        }
+        .form-control, .form-select { background: #fff; }
+        footer.footer { color: #6b7280; padding: 1.25rem 0; }
+        .img-rounded { border-radius: 8px; }
+    </style>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-modern mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">The Joel Hilton Film Collection</a>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Joel Hilton Film Collection</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,13 +59,13 @@
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="GetToknowJoel">Get To Know Him</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="GetToknowJoel">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AddMovie">Add Movie</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AddMovie">Add Movie</a>
                     </li>
                 </ul>
             </div>
@@ -39,10 +77,9 @@
         @RenderBody()
     </main>
 </div>
-
 <footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2026 - Mission6Assignment - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div class="container text-center">
+        &copy; 2026 - Mission6Assignment - Brady Bates
     </div>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>

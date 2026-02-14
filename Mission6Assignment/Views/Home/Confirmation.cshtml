@@ -1,4 +1,10 @@
 @model AddMovie
 
-<h1>Thank you, @Model.Title has been submitted!</h1>
-<a href="/">Return to Home Page</a>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 modern-card p-4 text-center">
+            <h1>Thank you, <strong>@Model.Title</strong> has been submitted!</h1>
+            <a href="/" class="btn btn-accent mt-3">Return to Home Page</a>
+        </div>
+    </div>
+</div>
