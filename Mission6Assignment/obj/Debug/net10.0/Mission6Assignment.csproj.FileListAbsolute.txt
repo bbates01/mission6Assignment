@@ -138,7 +138,6 @@
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/scopedcss/bundle/Mission6Assignment.styles.css
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/scopedcss/projectbundle/Mission6Assignment.bundle.scp.css
-/Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/compressed/uxetgw8fu8-{0}-lugek5hnai-lugek5hnai.gz
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/compressed/2xfaxy410m-{0}-61n19gt1b8-61n19gt1b8.gz
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/compressed/jocebpy5gu-{0}-fr7q2aak1r-fr7q2aak1r.gz
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/compressed/us9ykhna2e-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -213,3 +212,4 @@
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.pdb
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.genruntimeconfig.cache
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/ref/Mission6Assignment.dll
+/Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/compressed/uxetgw8fu8-{0}-lrzp46qstd-lrzp46qstd.gz

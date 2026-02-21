@@ -112,10 +112,10 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Delete(int id)
     {
-        var recordToDelte = _context.Movies
+        var recordToDelete = _context.Movies
             .Single(x => x.MovieId == id);
         
-        return View(recordToDelte);
+        return View(recordToDelete);
     }
 
     [HttpPost]

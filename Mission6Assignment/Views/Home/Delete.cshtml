@@ -1,13 +1,60 @@
-@model AddMovie
+@model Mission6Assignment.Models.AddMovie
 
-<h2>Confirm Deletion</h2>
-<h3>@Model.Title</h3>
+@{
+    ViewData["Title"] = "Delete Movie";
+}
 
-<form method="POST">
-     
-    <input type="hidden" asp-for="MovieId" />
-     
-     
-    <button type="submit" class="btn btn-danger">Delete</button>
-    <a class="btn btn-info" asp-controller="Home" asp-action="MovieList">Cancel</a>
-</form>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 modern-card p-4">
+            <h1>Confirm Delete</h1>
+            <p class="text-muted">Are you sure you want to delete this movie from the collection?</p>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Category</label>
+                <div class="form-control-plaintext">@Model.Category?.CategoryName</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Title</label>
+                <div class="form-control-plaintext">@Model.Title</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label fw-bold">Year</label>
+                    <div class="form-control-plaintext">@Model.Year</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label fw-bold">Rating</label>
+                    <div class="form-control-plaintext">@Model.Rating</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label fw-bold">Edited</label>
+                    <div class="form-control-plaintext">@(Model.Edited ? "Yes" : "No")</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Director</label>
+                <div class="form-control-plaintext">@Model.Director</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Lent To</label>
+                <div class="form-control-plaintext">@Model.LentTo</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Notes</label>
+                <div class="form-control-plaintext">@Model.Notes</div>
+            </div>
+
+            <form method="post" class="d-flex gap-2">
+                <input type="hidden" asp-for="MovieId" />
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a asp-action="MovieList" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
