@@ -4,15 +4,23 @@
 
 @model Mission6Assignment.Models.AddMovie
 
+<input type="hidden" asp-for="MovieId" />
+
 <div class="container mt-4">
     <div class="row justify-content-center">
         <div class="col-md-8 modern-card p-4">
             <h1>Add a Movie to the Collection</h1>
             <form method="POST" class="mt-3">
                 <div class="mb-3">
-                    <label asp-for="Category" class="form-label"></label>
-                    <input asp-for="Category" class="form-control" />
-                    <span asp-validation-for="Category" class="text-danger"></span>
+                    <label asp-for="CategoryId" class="form-label">Category</label>
+                    <select asp-for="CategoryId" class="form-select">
+                        <option value="">Select a category</option>
+                        @foreach (Category c in ViewBag.Categories)
+                        {
+                            <option value="@c.CategoryId">@c.CategoryName</option>
+                        }
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
@@ -53,6 +61,11 @@
                     <label asp-for="LentTo" class="form-label">Lent To:</label>
                     <input asp-for="LentTo" class="form-control" />
                 </div>
+                
+                <div class="form-check mb-3">
+                    <input asp-for="CopiedToPlex" class="form-check-input" />
+                    <label asp-for="CopiedToPlex" class="form-check-label"></label>
+                </div>
 
                 <div class="mb-3">
                     <label asp-for="Notes" class="form-label">Notes:</label>
@@ -60,6 +73,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-accent">Submit</button>
+                <div asp-validation-summary="All" class="text-danger mt-3"></div>
             </form>
         </div>
     </div>

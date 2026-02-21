@@ -1,12 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Mission6Assignment.Models;
-
-public class MovieDbContext : DbContext
+namespace Mission6Assignment.Models
 {
-    public MovieDbContext(DbContextOptions<MovieDbContext> options) : base(options) //constructor
+    public class MovieDbContext : DbContext
     {
+        public MovieDbContext(DbContextOptions<MovieDbContext> options) : base(options) //constructor
+        {
+        }
+        
+        public DbSet<AddMovie> Movies { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
-    
-    public DbSet<AddMovie> Movies { get; set; }
 }
+

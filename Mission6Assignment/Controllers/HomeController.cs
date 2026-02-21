@@ -25,14 +25,29 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult AddMovie()
     {
+        ViewBag.Categories = _context.Categories
+            .OrderBy(x => x.CategoryName)
+            .ToList();
+        
         return View();
     }
 
     [HttpPost]
     public IActionResult AddMovie(AddMovie response)
     {
-        _context.Movies.Add(response); // add the new movie to the database context
-        _context.SaveChanges(); // save the changes to the database
-        return View("Confirmation", response);
+        if (ModelState.IsValid)
+        {
+            _context.Movies.Add(response); // add the new movie to the database context
+            _context.SaveChanges(); // save the changes to the database
+            return View("Confirmation", response);
+        }
+        else // invalid data, return to form
+        {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(x => x.CategoryName)
+                .ToList();
+            
+            return View(response);
+        }
     }
 }

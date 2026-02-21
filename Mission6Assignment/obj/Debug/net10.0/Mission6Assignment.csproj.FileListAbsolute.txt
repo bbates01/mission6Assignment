@@ -131,6 +131,7 @@
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.MvcApplicationPartsAssemblyInfo.cache
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.RazorAssemblyInfo.cache
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.RazorAssemblyInfo.cs
+/Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.sourcelink.json
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
@@ -212,4 +213,3 @@
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.pdb
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.genruntimeconfig.cache
 /Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/ref/Mission6Assignment.dll
-/Users/bradybates/Library/CloudStorage/Box-Box/bbates01/Winter 2026/RiderProjects/Mission6Assignment/Mission6Assignment/obj/Debug/net10.0/Mission6Assignment.sourcelink.json
