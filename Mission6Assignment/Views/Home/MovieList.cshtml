@@ -1,0 +1,43 @@
+@model List<AddMovie>
+
+@if (Model == null || Model.Count == 0)
+{
+    <p>No movies currently in the collection.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="fw-bold">
+            <tr>
+                <th>Category</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Director</th>
+                <th>Rating</th>
+                <th>Edited</th>
+                <th>Lent To</th>
+                <th>Copied to Plex</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.Category?.CategoryName</td>
+                    <td>@movie.Title</td>
+                    <td>@movie.Year</td>
+                    <td>@movie.Director</td>
+                    <td>@movie.Rating</td>
+                    <td>@(movie.Edited ? "Yes" : "No")</td>
+                    <td>@movie.LentTo</td>
+                    <td>@(movie.CopiedToPlex ? "Yes" : "No")</td>
+                    <td>@movie.Notes</td>
+
+                    <td><a class="btn btn-info" asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieId">Edit</a></td>
+                    <td><a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@movie.MovieId">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
